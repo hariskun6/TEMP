@@ -95,6 +95,8 @@ def login(driver):
     except Exception as e:
         logging.error(f"Login failed: {e}")
         return False
+    
+    #test
 
 def check_session(driver):
     driver.get("https://dcp.orange.sixt.com/availableRides")
