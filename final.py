@@ -328,7 +328,7 @@ def main():
     chrome_options.add_argument("--disable-extensions")  # Disable extensions for performance
     chrome_options.add_argument("--disable-gpu")  # Disable GPU for stability in headless mode
     
-    if not testing_mode:
+    if testing_mode:
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
